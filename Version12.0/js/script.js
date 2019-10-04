@@ -28,7 +28,7 @@ document.getElementById(`MyInput2`).addEventListener(`keypress`, async (e) => {
 }
 })
 
-document.querySelector(`.Sports`).addEventListener(`click`, async () => {
+document.querySelector(`.Sports1`).addEventListener(`click`, async () => {
     currentPage=1;
     text = "sport";
     let images = await getImages(text);
@@ -40,7 +40,7 @@ document.querySelector(`.Sports`).addEventListener(`click`, async () => {
     document.getElementById("next").style.display = "flex";
 });
 
-document.querySelector(`.Skyscraper`).addEventListener(`click`, async () => {
+document.querySelector(`.Skyscraper1`).addEventListener(`click`, async () => {
     currentPage=1;
     text = "skyscraper";
     let images = await getImages(text);
@@ -52,7 +52,7 @@ document.querySelector(`.Skyscraper`).addEventListener(`click`, async () => {
     document.getElementById("next").style.display = "flex";
 });
 
-document.querySelector(`.Food`).addEventListener(`click`, async () => {
+document.querySelector(`.Food1`).addEventListener(`click`, async () => {
     currentPage=1;
     text = "breakfast";
     let images = await getImages(text);
@@ -64,7 +64,7 @@ document.querySelector(`.Food`).addEventListener(`click`, async () => {
     document.getElementById("next").style.display = "flex"; 
 });
 
-document.querySelector(`.Landscapes`).addEventListener(`click`, async () => {
+document.querySelector(`.Landscapes1`).addEventListener(`click`, async () => {
     currentPage=1;
     text = "landscape";
     let images = await getImages(text);
@@ -76,6 +76,53 @@ document.querySelector(`.Landscapes`).addEventListener(`click`, async () => {
     document.getElementById("next").style.display = "flex";
 });
 
+document.querySelector(`.Sports2`).addEventListener(`click`, async () => {
+    currentPage=1;
+    text = "sport";
+    let images = await getImages(text);
+    updateUI(images);
+    document.querySelector("main").style.display = "grid";
+    document.body.style.background = "#DDDDDD";
+    document.getElementById("cool_frase").style.display = "none";
+    document.getElementById("previous").style.display = "flex";
+    document.getElementById("next").style.display = "flex";
+});
+
+document.querySelector(`.Skyscraper2`).addEventListener(`click`, async () => {
+    currentPage=1;
+    text = "skyscraper";
+    let images = await getImages(text);
+    updateUI(images);
+    document.querySelector("main").style.display = "grid";
+    document.body.style.background = "#DDDDDD";
+    document.getElementById("cool_frase").style.display = "none";
+    document.getElementById("previous").style.display = "flex";
+    document.getElementById("next").style.display = "flex";
+});
+
+document.querySelector(`.Food2`).addEventListener(`click`, async () => {
+    currentPage=1;
+    text = "breakfast";
+    let images = await getImages(text);
+    updateUI(images);
+    document.querySelector("main").style.display = "grid";
+    document.body.style.background = "#DDDDDD";
+    document.getElementById("cool_frase").style.display = "none";
+    document.getElementById("previous").style.display = "flex";
+    document.getElementById("next").style.display = "flex"; 
+});
+
+document.querySelector(`.Landscapes2`).addEventListener(`click`, async () => {
+    currentPage=1;
+    text = "landscape";
+    let images = await getImages(text);
+    updateUI(images);
+    document.querySelector("main").style.display = "grid";
+    document.body.style.background = "#DDDDDD";
+    document.getElementById("cool_frase").style.display = "none";
+    document.getElementById("previous").style.display = "flex";
+    document.getElementById("next").style.display = "flex";
+});
 
 document.querySelector(`.overlay`).addEventListener(`click`, () => {
     document.querySelector(`.overlay`).innerHTML = ``;
